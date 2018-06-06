@@ -4,3 +4,11 @@ Automatically transliterate webpages from standard English orthography to the [S
 Under the hood, it uses my [to-shavian](https://github.com/nwah/to-shavian) library to do the transliteration.
 
 This is a work in progress.
+
+---
+
+### Enabled
+![Enabled](screenshot-enabled.png)
+
+### Disabled
+![Disabled](screenshot-disabled.png)

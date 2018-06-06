@@ -1,0 +1,32 @@
+{
+  "name": "Shavianize",
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": {
+      "32": "icon-32-disabled.png",
+      "48": "icon-48-disabled.png",
+      "128": "icon-128-disabled.png"
+    }
+  },
+  "content_scripts": [
+    {
+     "matches": ["http://*/*", "https://*/*"],
+     "js": ["contentScript.bundle.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "128": "icon-128.png",
+    "48": "icon-48.png",
+    "32": "icon-32.png"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
